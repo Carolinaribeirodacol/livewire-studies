@@ -6,11 +6,31 @@ use Livewire\Component;
 
 class InlineComponent extends Component
 {
+    public string $name = "Valor da propriedade";
+    public string $value, $php_value;
+
+    public function mount($value, $php_value) {
+        $this->value = $value;
+        $this->php_value = $php_value;
+    }
+
     public function render()
     {
         return <<<'HTML'
         <div>
-            {{-- Close your eyes. Count to one. That is how long forever feels. --}}
+            <p class="display-6 text-center text-info">Conteúdo de um componente inline</p>
+
+            <p class="display-6 text-center text-info">
+                O valor da propriedade é <strong class="text-warning">{{ $name }}</strong>
+            </p>
+
+            <p class="display-6 text-center text-info">
+                O valor passado para o componente é <strong class="text-warning">{{ $value }}</strong>
+            </p>
+
+            <p class="display-6 text-center text-info">
+                O valor passado para o componente é (PHP)<strong class="text-warning">{{ $php_value }}</strong>
+            </p>
         </div>
         HTML;
     }
