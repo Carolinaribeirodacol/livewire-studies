@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h3>Página de Laravel</h3>
+<x-layouts.main-layout>
+    <div class="display-6 text-center">Livewire</div>
+
+    <hr>
 
     <livewire:counter />
-</body>
-</html>
+</x-layouts.main-layout>
