@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    {{-- @livewire('counter') --}}
+    <h3>Página de Laravel</h3>
 
     <livewire:counter />
 </body>
